@@ -9,13 +9,15 @@
 <body>
   <div class="container">
     <h1>Weather Report</h1>
-    <input type="text" id="cityInput" placeholder="Enter city..." />
+    <input type="number" id="citylat" placeholder="Enter latitude..." />
+    <input type="number" id="citylon" placeholder="Enter longitude..." />
     <button onclick="getWeather()">Get Weather</button>
     <div id="weatherBox" class="hidden">
-      <h2 id="cityName"></h2>
-      <img id="weatherIcon" />
+      <h2 id="cityName"></h2> <!-- long and lat -->
+      <h1 id="weatherIcon"></h1>
       <p id="description"></p>
       <p id="temperature"></p>
+      <p id="lastUpdated"></p>
     </div>
   </div>
   <script src="script.js"></script>
